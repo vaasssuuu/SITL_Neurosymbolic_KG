@@ -55,6 +55,7 @@ The notebook automatically handles the installation of required packages, includ
 pip install langchain langchain-community neo4j
 apt-get install zstd
 curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
+```
 
 ## 🚀 How to Run the Evaluation
 
