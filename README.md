@@ -1,6 +1,6 @@
 # SITL_Neurosymbolic_KG
 
-# Symbolic-in-the-Loop (SITL) Neuro-Symbolic Verification
+# Symbolic-in-the-Loop (SITL) NeuroSymbolic Verification
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Neo4j](https://img.shields.io/badge/Neo4j-AuraDB-blue.svg)](https://neo4j.com/)
