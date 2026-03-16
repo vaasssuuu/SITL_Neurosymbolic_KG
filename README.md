@@ -55,3 +55,38 @@ The notebook automatically handles the installation of required packages, includ
 pip install langchain langchain-community neo4j
 apt-get install zstd
 curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
+
+## 🚀 How to Run the Evaluation
+
+1. Open `SITL_Neurosymbolic.ipynb` in Google Colab or your local Jupyter environment.
+2. Ensure `benchmark.json` is uploaded to the root directory (e.g., `/content/` in Colab).
+3. Select **Runtime -> Run All**.
+
+The script will automatically:
+* Boot the Ollama server and pull the `llama3` model.
+* Connect to your Neo4j database.
+* Iterate through all 50 questions in `benchmark.json`.
+* Output a real-time terminal trace of the extraction, database validation, and iterative feedback loops.
+
+---
+
+## 📊 Evaluation Metrics & Results
+
+The pipeline evaluates **Semantic Drift** mathematically. A "hallucination" is strictly defined as any extracted triple whose Subject, Object, or Relational Predicate does not exist within the Neo4j graph boundary.
+
+Upon completing the 50-question benchmark, the script outputs the final comparative metrics. In our primary test run, the pipeline achieved a **100% reduction in semantic drift**:
+
+```text
+============================================================
+📊 FINAL IEEE EVALUATION METRICS: SEMANTIC DRIFT 📊
+============================================================
+Total Baseline Triples Extracted: 35
+Baseline Hallucinations (Raw LLM): 27
+-> Baseline Hallucination Rate (H_base): 77.14%
+
+Total Final Triples Extracted: 8
+Final Hallucinations (Pipeline): 0
+-> Final Hallucination Rate (H_final): 0.00%
+
+🚀 SEMANTIC DRIFT REDUCTION: 100.00%
+============================================================
