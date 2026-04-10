@@ -15,9 +15,6 @@ This repository contains the core implementation and adversarial benchmark datas
 
 ## 🧠 Architecture Overview
 
-*(Note: Upload `architecture_diagram.png` to your repository root for this image to display)*
-![Architecture Diagram](architecture_diagram.png)
-
 The SITL pipeline operates in three major phases:
 1. **Targeted Extraction:** The LLM's draft response is programmatically parsed into `(Subject, Predicate, Object)` triples using Context-Aware Prompt Injection to ignore conversational fluff.
 2. **Logic Gate Verification:** The extracted triples are evaluated against the Neo4j Knowledge Graph using deterministic Cypher queries. 
