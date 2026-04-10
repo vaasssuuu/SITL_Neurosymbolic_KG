@@ -28,7 +28,6 @@ The SITL pipeline operates in three major phases:
 | :--- | :--- |
 | `SITL_Neurosymbolic.ipynb` | The primary Google Colab Notebook containing the full pipeline (Ollama server boot, Prompts, Neo4j connection, and Evaluation loop). |
 | `benchmark.json` | A 50-question adversarial micro-benchmark divided into four tiers: Direct Facts, Negative/Trick, Fluff Triggers, and Out-of-Domain. |
-| `semantic_drift_progress.json` | *(Generated at runtime)* Checkpoint file to save evaluation progress and auto-heal if the local LLM server crashes. |
 
 ---
 
@@ -43,7 +42,7 @@ You must have an active **Neo4j AuraDB** instance (or local Neo4j desktop) popul
 ### 2. Environment Variables
 If using Google Colab, click on the **Secrets (🔑)** tab on the left sidebar and add your Neo4j credentials:
 * `NEO4J_URI`: Your database URI (e.g., `neo4j+s://<your-db-id>.databases.neo4j.io`)
-* `NEO4J_USERNAME`: Your database username (usually `neo4j`)
+* `NEO4J_USERNAME`: Your database username
 * `NEO4J_PASSWORD`: Your database password
 
 ### 3. Dependencies
@@ -78,11 +77,11 @@ Upon completing the 50-question benchmark, the script outputs the final comparat
 ============================================================
 📊 FINAL IEEE EVALUATION METRICS: SEMANTIC DRIFT 📊
 ============================================================
-Total Baseline Triples Extracted: 35
-Baseline Hallucinations (Raw LLM): 27
--> Baseline Hallucination Rate (H_base): 77.14%
+Total Baseline Triples Extracted: 60
+Baseline Hallucinations (Raw LLM): 51
+-> Baseline Hallucination Rate (H_base): 85.00%
 
-Total Final Triples Extracted: 8
+Total Final verified Triples Extracted: 10
 Final Hallucinations (Pipeline): 0
 -> Final Hallucination Rate (H_final): 0.00%
 
