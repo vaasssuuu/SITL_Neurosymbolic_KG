@@ -1,0 +1,71 @@
+Subject,Predicate,Object
+Distributed Systems,solves,Consensus
+Blockchain,is a type of,Distributed Systems
+Blockchain,requires,Consensus
+Distributed Record Keeping,is a component of,Blockchain
+Distributed Record Keeping,contrasts with,Centralized Databases
+Centralized Databases,example of,Bank
+Distributed Record Keeping,involves,Distributed Ledger
+Distributed Ledger,shared across,Nodes
+Blockchain,addresses,Byzantine Generals Problem
+Byzantine Generals Problem,involves,Generals
+Generals,may include,Traitor
+Generals,includes,Loyal Generals
+Loyal Generals,uses,Algorithm
+Distributed Systems,models,Fail-stop
+Distributed Systems,models,Byzantine Faults
+Consensus,achieved via,Consensus Algorithms
+Consensus Algorithms,has,Scalability Problems
+PBFT,example of,Consensus Algorithms
+Satoshi Nakamoto,proposed,Nakamoto Innovation
+Nakamoto Innovation,combines,Cryptography
+Nakamoto Innovation,uses,Lottery-based System
+Lottery-based System,example of,Proof of Work
+Blockchain,uses,Hash Pointers
+Hash Pointers,combines with,Cryptographic Hash
+Distributed Systems,ensures,Atomic Broadcast
+Distributed Systems,achieves,Byzantine Fault Tolerance (BFT)
+Digital Cash History,covers,Digital Currency
+eCash,example of,Digital Currency
+B-money,example of,Digital Currency
+Digital Currency,struggled with,Double Spend Problem
+Double Spend Problem,requires,Central Bank
+Cryptography,provides,Cryptographic Hash Functions
+Cryptographic Hash Functions,example,SHA-256
+Cryptographic Hash Functions,is,Collision-resistant
+Cryptographic Hash Functions,is,Puzzle-friendly
+Cryptography,provides,Digital Signatures
+Digital Signatures,uses,Asymmetric Cryptography
+Asymmetric Cryptography,includes,Public Key
+Asymmetric Cryptography,includes,Private Key
+Cryptography,includes,Verifiable Random Functions (VRF)
+Cryptography,includes,Zero-Knowledge Systems (ZKP)
+Bitcoin,is an implementation of,Blockchain
+Bitcoin,uses,Proof of Work
+Miners,participates in,Proof of Work
+Proof of Stake (PoS),is an alternative to,Consensus
+Validators,participates in,Proof of Stake (PoS)
+Bitcoin,has,Bitcoin Scripting
+Bitcoin Scripting,is not,Turing Complete
+Ethereum,is an implementation of,Blockchain
+Ethereum,supports,Smart Contracts
+Smart Contracts,written in,Solidity
+Solidity,is,Turing Complete
+Smart Contracts,enables,DeFi
+Smart Contracts,enables,NFTs
+Smart Contracts,enables,DAOs
+DAOs,example of vulnerability in,DAO Hack
+Smart Contracts,requires,Formal Verification
+Hyperledger Fabric,is an example of,Permissioned Blockchain
+Hyperledger Fabric,used in,Supply Chains
+Bitcoin,is,Pseudo-anonymity
+Zcash,provides,Anonymity
+Zcash,uses,Zk-SNARKS
+Blockchain,vulnerable to,Sybil Attack
+Blockchain,vulnerable to,51% Attack
+Miners,may perform,Selfish Mining
+Blockchain,uses for scaling,Sharding
+Algorand,uses,Proof of Stake (PoS)
+Algorand,uses,Verifiable Random Functions (VRF)
+Satoshi Nakamoto,created,Bitcoin
+Bitcoin,introduced in,2008
