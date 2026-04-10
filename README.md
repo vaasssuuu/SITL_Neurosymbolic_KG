@@ -59,7 +59,7 @@ curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
 
 ## 🚀 How to Run the Evaluation
 
-1. Open `SITL_Neurosymbolic.ipynb` in Google Colab or your local Jupyter environment.
+1. Open `SITL_Neurosymbolic_v2.ipynb` in Google Colab or your local Jupyter environment.
 2. Ensure `benchmark.json` is uploaded to the root directory (e.g., `/content/` in Colab).
 3. Select **Runtime -> Run All**.
 
